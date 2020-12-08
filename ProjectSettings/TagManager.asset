@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Precipice
+  - Collectable
+  - Checkpoint
+  - Bomber
+  - DetectionArea
+  - Bomb
+  - Goblin
+  - Wall
+  - EnemyBullet
+  - PlayerBullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - background
+  - Ground
+  - Collectable
+  - MainTitle
+  - Player
+  - Enemy
+  - EnemyBullet
+  - PlayerBullet
+  - Throwable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2969001237
+    locked: 0
+  - name: Platforms
+    uniqueID: 3602853235
+    locked: 0
+  - name: Details
+    uniqueID: 1410846337
+    locked: 0
+  - name: Player
+    uniqueID: 3571198087
+    locked: 0
+  - name: Enemy
+    uniqueID: 2439275285
+    locked: 0
+  - name: Collectable
+    uniqueID: 3153594459
+    locked: 0
+  - name: MainTitle
+    uniqueID: 2891422997
+    locked: 0
