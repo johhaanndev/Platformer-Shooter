@@ -1,6 +1,6 @@
 # Platformer-Shooter
 
-In case you get the "Window layout error" on loading unity project, follow the instructions in this video: v=hGukVu1DR18&ab_channel=GameTrick
+In case you get the "Window layout error" on loading unity project, follow the instructions in this video: https://www.youtube.com/watch?v=hGukVu1DR18&ab_channel=GameTrick
 
 Upload version: 1
 
