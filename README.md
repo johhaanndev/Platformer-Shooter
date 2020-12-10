@@ -1,34 +1,36 @@
 # Platformer-Shooter
 
-Versión de subida: 1
+In case you get the "Window layout error" on loading unity project, follow the instructions in this video: v=hGukVu1DR18&ab_channel=GameTrick
 
-**Explicación del Gameplay**
+Upload version: 1
 
-Se trata de un nivel de plataformas 2D de acción y aventuras. El personage tiene que cruzar el mapa hasta tocar un orbe, si muere en el camino tendrá que volver a empezar. Dispone de dos ataques diferentes: disparo y lanzamiento de objetos. Ambos ataques eliminan los enemigos de un golpe, pero el jugador también muere de un golpe. Los enemigos sólo tienen disparos horizontales, con la misma potencia que el jugador. Caer por un precipicio tambien causa la muerte.
+**gameplay explanation**
 
-Los controles son básicos: flechas LEFT y RIGHT para desplazarse, flecha UP para saltar (SPACE también se puede usar para saltar). Ataques: F disparo, E lanzamiento parabólico.
+It is a 2D platform, action and adventures game. Player has go throught the map till it gets the final orb without getting killed, if it does, it must start again. Main character has two different attacks: shooting and throwing objects. Both can kill an enemy with a single shot, but player also can get killed by one enemy shot. Enemies can only shoot horitzontal bullets, with the same power as the player's character. Falling off of cliff also cause death.
 
-El juego se basa en dos escenas: 
-- Main menu: menú principal (jugar o salir).
-- Level-Particles: nivel jugable, desarrollo principal del juego
+Controls are basic: LEFT and RIGHT to run, UP to jump (SPACE also allowed to jump). F to shoot and E to throw.
 
-**Proceso del desarrollo**
+Game is about two scene:
+- Main menu: buttons to start game or quit.
+- Level scene: main gameplay is developed.
 
-Siguiendo el repositorio de la PEC2, se ha implementado las funcionalidades de disparos, inteligencias artificiales nuevas y todos los sistemas de partículas que dan un toque visual al juego.
+**Development process**
+
+Following the "Platformer" previous repository (https://github.com/johhaanndev/Platformer), it has been added the shooting features, new AI and all particles system that gives a visual effect.
 
 _Main Menu_
 
-Sin cambios en el desarrollo. Sólo se ha modificado la imagen de fondo y la música.
+No changes, only image and music have been changed.
 
-_Level Particles_
+_Level Scene_
 
-- Jugador: funcionalidades de disparo. Se ha añadido un nuevo estado: shoot, senecarga de ejecutar la animación de disparar, que desde la misma llama mediante un evento la función que detiene esta misma animación (motivos explicados en el script).
-Ahora el jugador puede colisionar con el enemigo, sólo las balas le dañan. La muerte por caída sigue activa.
-La recolección de monedas atorga puntos, pero no matar a un enemigo.
+- Player: shooting features. A new state has been added to the FSM: shoot, it plays the shooting animation, which also calls, by an animation event, another method that stops this animation (reason explained in the script).
+Now, player can collide with enemies, only bullets can kill it. Death by falling is still activated.
+Coins collected increases the score, but killing an enemies don't.
 
-- Goblin (enemigo): Se desplaza de lado a lado en una distancia específica y mientras el juegador no entre en la zona de detección (también tiene una distancia determinada). Cuando el jugador entra en dicha zona, empieza a disparar en dirección al jugador.
+- Goblin (enemy): it moves side to side withing limits while player does not enter the detection zone. As soon as player enters, goblin starts shooting in the player's direction.
 
-- Balas: Los proyectiles tienen sus propias características. Las balas enemigas sólo impactan con el jugador y no en los otros enemigos. Las balas entre ellas no colisionan, al impactar con la pared, desaparecen. Los objetos que lanza el jugador no colisionan con las balas del jugador, pero si pueden desviar las de los enemigos y sí chocan con las paredes.
-En cualquier caso de disparo, el desarrollo se trata de instanciar el prefab para cada bala en la posición de disparo.
+- Bullets: each projectile has its own characteristics. Enemy bullets collide with player, but not with other enemies. Player bullets and enemy bullets don't collide with each other, when any of these bullets hits a wall, they disappear. A thrown object does not collide with player bullets, but they can deflect enemy's and can touch a wall without disappearing.
+In any case, the development is about instantiating the bullet prefab in the firing point position.
 
-Podéis ver el resultado en el siguiente link: 
+Check out the result in this video: https://www.youtube.com/watch?v=L4s1zhhjtaQ&ab_channel=JohhaannDev
